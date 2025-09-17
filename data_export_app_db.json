@@ -1,0 +1,153 @@
+{
+  "export_date": "2025-09-17T21:21:44.065885",
+  "source_db": "backend/app.db",
+  "total_tables": 14,
+  "table_names": [
+    "adaptive_questions",
+    "adaptive_tests",
+    "classes",
+    "formative_evaluations",
+    "questions",
+    "quiz_assignments",
+    "quiz_results",
+    "quizzes",
+    "remediation_badges",
+    "remediation_progress",
+    "remediation_results",
+    "students",
+    "test_assignments",
+    "users"
+  ],
+  "tables": {
+    "adaptive_questions": {
+      "row_count": 0,
+      "data": []
+    },
+    "adaptive_tests": {
+      "row_count": 0,
+      "data": []
+    },
+    "classes": {
+      "row_count": 1,
+      "data": [
+        {
+          "id": 1,
+          "name": "Classe Test 6ème A",
+          "subject": "Mathématiques",
+          "teacher_id": 1,
+          "academic_year": "2024-2025",
+          "is_active": 1,
+          "created_at": "2025-08-18T04:03:37.470123"
+        }
+      ]
+    },
+    "formative_evaluations": {
+      "row_count": 0,
+      "data": []
+    },
+    "questions": {
+      "row_count": 1,
+      "data": [
+        {
+          "id": 1,
+          "quiz_id": 1,
+          "question_text": "Quelle est la solution de 2x + 5 = 13?",
+          "question_type": "multiple_choice",
+          "options": "[\"x = 4\", \"x = 8\", \"x = 6\", \"x = 3\"]",
+          "correct_answer": "x = 4",
+          "points": 1,
+          "difficulty_level": 1,
+          "created_at": "2025-08-26 15:27:16"
+        }
+      ]
+    },
+    "quiz_assignments": {
+      "row_count": 0,
+      "data": []
+    },
+    "quiz_results": {
+      "row_count": 0,
+      "data": []
+    },
+    "quizzes": {
+      "row_count": 1,
+      "data": [
+        {
+          "id": 1,
+          "title": "Quiz de Mathematiques - Algebre",
+          "description": "Quiz sur les bases de l algebre",
+          "subject": "mathematiques",
+          "difficulty_level": 1,
+          "time_limit": 30,
+          "created_by": 1,
+          "created_at": "2025-08-26 15:27:16",
+          "updated_at": "2025-08-26 15:27:16"
+        }
+      ]
+    },
+    "remediation_badges": {
+      "row_count": 0,
+      "data": []
+    },
+    "remediation_progress": {
+      "row_count": 0,
+      "data": []
+    },
+    "remediation_results": {
+      "row_count": 0,
+      "data": []
+    },
+    "students": {
+      "row_count": 3,
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Alice",
+          "last_name": "Dupont",
+          "email": "alice.dupont@test.com",
+          "class_id": 1,
+          "is_active": 1,
+          "created_at": "2025-08-18T04:03:37.471123"
+        },
+        {
+          "id": 2,
+          "first_name": "Bob",
+          "last_name": "Martin",
+          "email": "bob.martin@test.com",
+          "class_id": 1,
+          "is_active": 1,
+          "created_at": "2025-08-18T04:03:37.471123"
+        },
+        {
+          "id": 3,
+          "first_name": "Clara",
+          "last_name": "Bernard",
+          "email": "clara.bernard@test.com",
+          "class_id": 1,
+          "is_active": 1,
+          "created_at": "2025-08-18T04:03:37.471123"
+        }
+      ]
+    },
+    "test_assignments": {
+      "row_count": 0,
+      "data": []
+    },
+    "users": {
+      "row_count": 1,
+      "data": [
+        {
+          "id": 1,
+          "email": "teacher@example.com",
+          "password": "cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416",
+          "first_name": "Test",
+          "last_name": "Teacher",
+          "role": "teacher",
+          "is_active": 1,
+          "created_at": "2025-08-18T04:03:37.468155",
+          "updated_at": "2025-08-18T04:03:37.468155"
+        }
+      ]
+    }
+  }
+}

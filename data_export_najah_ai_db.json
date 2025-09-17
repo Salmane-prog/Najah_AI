@@ -1,0 +1,430 @@
+{
+  "export_date": "2025-09-17T21:21:44.081892",
+  "source_db": "backend/najah_ai.db",
+  "total_tables": 17,
+  "table_names": [
+    "adaptive_questions",
+    "adaptive_sessions",
+    "adaptive_tests",
+    "class_students",
+    "classes",
+    "cognitive_profiles",
+    "competency_analysis",
+    "extended_questions",
+    "question_metadata",
+    "question_responses",
+    "question_tag_relations",
+    "question_tags",
+    "response_analyses",
+    "student_abilities",
+    "student_learning_paths",
+    "test_assignments",
+    "test_attempts"
+  ],
+  "tables": {
+    "adaptive_questions": {
+      "row_count": 5,
+      "data": [
+        {
+          "id": 1,
+          "test_id": 1,
+          "question_text": "Quelle est la forme correcte du verbe 'aller' à la 3ème personne du pluriel du présent ?",
+          "question_type": "multiple_choice",
+          "difficulty_level": 5,
+          "learning_objective": "Conjugaison des verbes",
+          "options": null,
+          "correct_answer": "vont",
+          "explanation": "Le verbe 'aller' se conjugue : je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+          "order_index": 1
+        },
+        {
+          "id": 2,
+          "test_id": 1,
+          "question_text": "Dans la phrase 'Les enfants jouent dans le jardin', quel est le sujet ?",
+          "question_type": "multiple_choice",
+          "difficulty_level": 4,
+          "learning_objective": "Identification du sujet",
+          "options": null,
+          "correct_answer": "Les enfants",
+          "explanation": "Le sujet est celui qui fait l'action. Ici, 'Les enfants' est le sujet du verbe 'jouent'.",
+          "order_index": 2
+        },
+        {
+          "id": 3,
+          "test_id": 1,
+          "question_text": "Complétez : 'La fille ___ belle.' (choisir le bon accord)",
+          "question_type": "multiple_choice",
+          "difficulty_level": 6,
+          "learning_objective": "Accord de l'adjectif",
+          "options": null,
+          "correct_answer": "est",
+          "explanation": "L'adjectif 'belle' s'accorde avec le sujet féminin singulier 'fille'.",
+          "order_index": 3
+        },
+        {
+          "id": 4,
+          "test_id": 1,
+          "question_text": "Quel est le temps du verbe dans 'Nous aurons fini' ?",
+          "question_type": "multiple_choice",
+          "difficulty_level": 7,
+          "learning_objective": "Temps composés",
+          "options": null,
+          "correct_answer": "futur antérieur",
+          "explanation": "Le futur antérieur se forme avec 'avoir' au futur + participe passé.",
+          "order_index": 4
+        },
+        {
+          "id": 5,
+          "test_id": 1,
+          "question_text": "Identifiez la fonction de 'très' dans 'Il est très intelligent'",
+          "question_type": "multiple_choice",
+          "difficulty_level": 5,
+          "learning_objective": "Fonction des mots",
+          "options": null,
+          "correct_answer": "adverbe de degré",
+          "explanation": "'Très' modifie l'adjectif 'intelligent' et indique un degré élevé.",
+          "order_index": 5
+        }
+      ]
+    },
+    "adaptive_sessions": {
+      "row_count": 0,
+      "data": []
+    },
+    "adaptive_tests": {
+      "row_count": 5,
+      "data": [
+        {
+          "id": 1,
+          "title": "Test de Grammaire Française - Niveau Intermédiaire",
+          "subject": "Français",
+          "description": "Test adaptatif pour évaluer les compétences en grammaire française",
+          "difficulty_min": 3,
+          "difficulty_max": 7,
+          "estimated_duration": 25,
+          "total_questions": 15,
+          "adaptation_type": "hybrid",
+          "learning_objectives": "Maîtriser la conjugaison, les accords et la syntaxe",
+          "is_active": 1,
+          "created_by": 33,
+          "created_at": "2025-08-17 18:25:09",
+          "updated_at": "2025-08-17 18:25:09"
+        },
+        {
+          "id": 2,
+          "title": "Évaluation Mathématiques - Algèbre",
+          "subject": "Mathématiques",
+          "description": "Test adaptatif sur les équations du premier degré et les inéquations",
+          "difficulty_min": 4,
+          "difficulty_max": 8,
+          "estimated_duration": 30,
+          "total_questions": 20,
+          "adaptation_type": "performance",
+          "learning_objectives": "Résoudre des équations et inéquations du premier degré",
+          "is_active": 1,
+          "created_by": 33,
+          "created_at": "2025-08-17 18:25:09",
+          "updated_at": "2025-08-17 18:25:09"
+        },
+        {
+          "id": 3,
+          "title": "Histoire - Révolution Française",
+          "subject": "Histoire",
+          "description": "Test adaptatif sur la période révolutionnaire française",
+          "difficulty_min": 2,
+          "difficulty_max": 6,
+          "estimated_duration": 20,
+          "total_questions": 12,
+          "adaptation_type": "cognitive",
+          "learning_objectives": "Comprendre les événements clés et les personnages importants",
+          "is_active": 1,
+          "created_by": 33,
+          "created_at": "2025-08-17 18:25:09",
+          "updated_at": "2025-08-17 18:25:09"
+        },
+        {
+          "id": 4,
+          "title": "Sciences - Cycle de l'Eau",
+          "subject": "Sciences",
+          "description": "Test adaptatif sur le cycle de l'eau et les écosystèmes",
+          "difficulty_min": 3,
+          "difficulty_max": 7,
+          "estimated_duration": 25,
+          "total_questions": 18,
+          "adaptation_type": "hybrid",
+          "learning_objectives": "Comprendre le cycle de l'eau et l'impact humain",
+          "is_active": 1,
+          "created_by": 33,
+          "created_at": "2025-08-17 18:25:09",
+          "updated_at": "2025-08-17 18:25:09"
+        },
+        {
+          "id": 5,
+          "title": "Géographie - Cartographie",
+          "subject": "Géographie",
+          "description": "Test adaptatif sur la lecture de cartes et les climats",
+          "difficulty_min": 2,
+          "difficulty_max": 6,
+          "estimated_duration": 20,
+          "total_questions": 16,
+          "adaptation_type": "cognitive",
+          "learning_objectives": "Lire des cartes et comprendre les climats du monde",
+          "is_active": 1,
+          "created_by": 33,
+          "created_at": "2025-08-17 18:25:09",
+          "updated_at": "2025-08-17 18:25:09"
+        }
+      ]
+    },
+    "class_students": {
+      "row_count": 0,
+      "data": []
+    },
+    "classes": {
+      "row_count": 3,
+      "data": [
+        {
+          "id": 1,
+          "name": "6ème A - Mathématiques",
+          "description": "Classe de 6ème spécialisée en mathématiques",
+          "teacher_id": 33,
+          "created_at": "2025-08-17 18:25:09"
+        },
+        {
+          "id": 2,
+          "name": "5ème B - Français",
+          "description": "Classe de 5ème spécialisée en français",
+          "teacher_id": 33,
+          "created_at": "2025-08-17 18:25:09"
+        },
+        {
+          "id": 3,
+          "name": "4ème C - Sciences",
+          "description": "Classe de 4ème spécialisée en sciences",
+          "teacher_id": 33,
+          "created_at": "2025-08-17 18:25:09"
+        }
+      ]
+    },
+    "cognitive_profiles": {
+      "row_count": 0,
+      "data": []
+    },
+    "competency_analysis": {
+      "row_count": 0,
+      "data": []
+    },
+    "extended_questions": {
+      "row_count": 0,
+      "data": []
+    },
+    "question_metadata": {
+      "row_count": 0,
+      "data": []
+    },
+    "question_responses": {
+      "row_count": 0,
+      "data": []
+    },
+    "question_tag_relations": {
+      "row_count": 0,
+      "data": []
+    },
+    "question_tags": {
+      "row_count": 20,
+      "data": [
+        {
+          "id": 1,
+          "tag": "mathématiques",
+          "category": "matière",
+          "description": "Questions de mathématiques",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 2,
+          "tag": "français",
+          "category": "matière",
+          "description": "Questions de français",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 3,
+          "tag": "sciences",
+          "category": "matière",
+          "description": "Questions de sciences",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 4,
+          "tag": "histoire",
+          "category": "matière",
+          "description": "Questions d'histoire",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 5,
+          "tag": "géographie",
+          "category": "matière",
+          "description": "Questions de géographie",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 6,
+          "tag": "facile",
+          "category": "difficulté",
+          "description": "Questions de niveau facile",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 7,
+          "tag": "moyen",
+          "category": "difficulté",
+          "description": "Questions de niveau moyen",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 8,
+          "tag": "difficile",
+          "category": "difficulté",
+          "description": "Questions de niveau difficile",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 9,
+          "tag": "QCM",
+          "category": "type",
+          "description": "Questions à choix multiples",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 10,
+          "tag": "texte_libre",
+          "category": "type",
+          "description": "Questions à réponse libre",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 11,
+          "tag": "image",
+          "category": "type",
+          "description": "Questions avec support image",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 12,
+          "tag": "logique",
+          "category": "compétence",
+          "description": "Développement de la logique",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 13,
+          "tag": "mémoire",
+          "category": "compétence",
+          "description": "Exercice de la mémoire",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 14,
+          "tag": "compréhension",
+          "category": "compétence",
+          "description": "Compréhension de texte",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 15,
+          "tag": "calcul",
+          "category": "compétence",
+          "description": "Calculs mathématiques",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 16,
+          "tag": "analyse",
+          "category": "compétence",
+          "description": "Analyse et réflexion",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 17,
+          "tag": "visuel",
+          "category": "style",
+          "description": "Style d'apprentissage visuel",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 18,
+          "tag": "auditif",
+          "category": "style",
+          "description": "Style d'apprentissage auditif",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 19,
+          "tag": "kinesthésique",
+          "category": "style",
+          "description": "Style d'apprentissage kinesthésique",
+          "created_at": "2025-08-20 14:31:34"
+        },
+        {
+          "id": 20,
+          "tag": "lecture_écriture",
+          "category": "style",
+          "description": "Style d'apprentissage lecture/écriture",
+          "created_at": "2025-08-20 14:31:34"
+        }
+      ]
+    },
+    "response_analyses": {
+      "row_count": 0,
+      "data": []
+    },
+    "student_abilities": {
+      "row_count": 0,
+      "data": []
+    },
+    "student_learning_paths": {
+      "row_count": 0,
+      "data": []
+    },
+    "test_assignments": {
+      "row_count": 3,
+      "data": [
+        {
+          "id": 1,
+          "test_id": 1,
+          "assignment_type": "class",
+          "target_id": 1,
+          "assigned_by": 33,
+          "assigned_at": "2025-08-17 18:25:09",
+          "due_date": "2024-12-31 23:59:59",
+          "status": "active"
+        },
+        {
+          "id": 2,
+          "test_id": 2,
+          "assignment_type": "class",
+          "target_id": 2,
+          "assigned_by": 33,
+          "assigned_at": "2025-08-17 18:25:09",
+          "due_date": "2024-12-31 23:59:59",
+          "status": "active"
+        },
+        {
+          "id": 3,
+          "test_id": 3,
+          "assignment_type": "class",
+          "target_id": 3,
+          "assigned_by": 33,
+          "assigned_at": "2025-08-17 18:25:09",
+          "due_date": "2024-12-31 23:59:59",
+          "status": "active"
+        }
+      ]
+    },
+    "test_attempts": {
+      "row_count": 0,
+      "data": []
+    }
+  }
+}

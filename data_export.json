@@ -1,0 +1,112 @@
+{
+  "export_date": "2025-09-17T21:10:38.459753",
+  "source_db": "app.db",
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@najah.ai",
+      "hashed_password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/8HqHh6.",
+      "role": "admin",
+      "first_name": "Admin",
+      "last_name": "System",
+      "avatar": "A",
+      "created_at": "2025-09-07 13:18:26"
+    },
+    {
+      "id": 2,
+      "username": "teacher1",
+      "email": "marie.dubois@najah.ai",
+      "hashed_password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/8HqHh6.",
+      "role": "teacher",
+      "first_name": "Marie",
+      "last_name": "Dubois",
+      "avatar": "MD",
+      "created_at": "2025-09-07 13:18:26"
+    },
+    {
+      "id": 3,
+      "username": "teacher2",
+      "email": "ahmed.benali@najah.ai",
+      "hashed_password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/8HqHh6.",
+      "role": "teacher",
+      "first_name": "Ahmed",
+      "last_name": "Benali",
+      "avatar": "AB",
+      "created_at": "2025-09-07 13:18:26"
+    },
+    {
+      "id": 4,
+      "username": "student1",
+      "email": "salmane.hajouji@najah.ai",
+      "hashed_password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/8HqHh6.",
+      "role": "student",
+      "first_name": "Salmane",
+      "last_name": "EL Hajouji",
+      "avatar": "SH",
+      "created_at": "2025-09-07 13:18:26"
+    },
+    {
+      "id": 5,
+      "username": "student2",
+      "email": "fatima.alami@najah.ai",
+      "hashed_password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/8HqHh6.",
+      "role": "student",
+      "first_name": "Fatima",
+      "last_name": "Alami",
+      "avatar": "FA",
+      "created_at": "2025-09-07 13:18:26"
+    },
+    {
+      "id": 6,
+      "username": "student3",
+      "email": "omar.benjelloun@najah.ai",
+      "hashed_password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/8HqHh6.",
+      "role": "student",
+      "first_name": "Omar",
+      "last_name": "Benjelloun",
+      "avatar": "OB",
+      "created_at": "2025-09-07 13:18:26"
+    }
+  ],
+  "classes": [],
+  "quizzes": [
+    {
+      "id": 1,
+      "title": "Quiz Grammaire Française",
+      "description": "Test de grammaire française de base",
+      "subject": "Français",
+      "level": "Débutant",
+      "created_by": 2,
+      "created_at": "2025-09-07 13:18:26",
+      "is_active": 1,
+      "time_limit": 15,
+      "total_points": 20.0
+    },
+    {
+      "id": 2,
+      "title": "Quiz Algèbre",
+      "description": "Test d'algèbre niveau intermédiaire",
+      "subject": "Mathématiques",
+      "level": "Intermédiaire",
+      "created_by": 3,
+      "created_at": "2025-09-07 13:18:26",
+      "is_active": 1,
+      "time_limit": 20,
+      "total_points": 25.0
+    },
+    {
+      "id": 3,
+      "title": "Quiz Histoire de France",
+      "description": "Test sur l'histoire de France",
+      "subject": "Histoire",
+      "level": "Débutant",
+      "created_by": 2,
+      "created_at": "2025-09-07 13:18:26",
+      "is_active": 1,
+      "time_limit": 15,
+      "total_points": 20.0
+    }
+  ],
+  "questions": []
+}
